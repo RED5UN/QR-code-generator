@@ -23,7 +23,7 @@ body{
     color: black;
 }
 .container input{
-    width: 100%;
+    width: 90%;
     height: 20px;
     border: 1px solid black;
     outline: 0;
@@ -92,4 +92,65 @@ body{
     100% {
         transform: translateX(0%);
     }
+}
+
+@media screen and (max-width: 600px)
+{
+    #imgBox {
+        width: 200px;
+        border-radius: 5px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 1s;
+        padding-left: 40px;
+    }
+    
+    #imgBox img {
+        width: 100%;
+        padding: 10px;
+        
+    }
+    
+    #imgBox.show-img {
+        max-height: 300px;
+        margin: 10px auto;
+        border: 1px solid #d1d1d1;
+        padding-right:15px;
+        
+    }
+}
+
+@media screen and (max-width:900px)
+{
+
+    .container{
+        width:60%;
+        margin-right: 10px;
+        
+    }
+    #imgBox {
+        width: 200px;
+        border-radius: 5px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 1s;
+        padding-left: 15px;
+        margin: 0;
+        padding:0%
+        
+    }
+    
+    #imgBox img {
+        width: 100%;
+        padding: 10px;
+    
+    }
+    
+    #imgBox.show-img {
+        max-height: 300px;
+        margin: 10px auto;
+        border: 1px solid #d1d1d1;
+        padding-right:15px;
+    }
+    
 }
